@@ -125,7 +125,7 @@ static inline NSString* cachePathForKey(NSString* directory, NSString* key) {
 	return self;
 }
 
-- (NSString*)pathOfCacheForKey:(NSString* __nonnull)key {
+- (NSString* __nonnull)pathOfCacheForKey:(NSString* __nonnull)key {
     return cachePathForKey(_directory, key);
 }
 
