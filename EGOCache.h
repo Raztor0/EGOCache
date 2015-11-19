@@ -51,6 +51,7 @@
 - (void)removeCacheForKey:(NSString* __nonnull)key;
 
 - (BOOL)hasCacheForKey:(NSString* __nonnull)key;
+- (NSString*)pathOfCacheForKey:(NSString* __nonnull)key;
 
 - (NSData* __nullable)dataForKey:(NSString* __nonnull)key;
 - (void)setData:(NSData* __nonnull)data forKey:(NSString* __nonnull)key;

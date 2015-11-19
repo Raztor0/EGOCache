@@ -125,6 +125,10 @@ static inline NSString* cachePathForKey(NSString* directory, NSString* key) {
 	return self;
 }
 
+- (NSString*)pathOfCacheForKey:(NSString* __nonnull)key {
+    return cachePathForKey(_directory, key);
+}
+
 - (void)clearCache {
 	dispatch_sync(_cacheInfoQueue, ^{
 		for(NSString* key in _cacheInfo) {
